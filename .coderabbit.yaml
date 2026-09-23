@@ -113,6 +113,10 @@ reviews:
       instructions: |
         Task D. ≥3 конкретні випадки: що просили, що агент сказав/зробив, як
         помітили, чому він так вирішив, як виправили. Загальні фрази — ⚠️.
+        Рівноцінна альтернатива, якщо агент не помилився: контрольний прогін
+        тікета швидшою/дешевшою моделлю в чистому клоні без файлів курсу, з
+        дифом, відповіддю моделі і перевіркою, чи змінився вихід для іншої
+        системи. Не вимагай вигаданих помилок.
 
     - path: "docs/task-e-bonus.md"
       instructions: |
@@ -169,7 +173,10 @@ reviews:
         name: "Task D — AI mistakes + app/AGENTS.md"
         instructions: >
           Static review only. Check docs/ai-on-legacy.md has at least three
-          concrete cases with evidence, and app/AGENTS.md exists with specific,
+          concrete cases with evidence OR a documented control run (the ticket
+          alone, in a clean clone without the course files, on a faster or
+          cheaper model, with its diff and whether another system's output
+          changed), and app/AGENTS.md exists with specific,
           non-obvious knowledge about this system (contracts with other systems,
           traps, which docs are stale) referencing files. Generic advice without
           ties to this code FAILS. "Nothing went wrong" passes only if it lists
