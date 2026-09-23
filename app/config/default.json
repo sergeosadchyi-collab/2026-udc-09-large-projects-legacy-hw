@@ -1,0 +1,11 @@
+{
+  "company": {
+    "name": "ТОВ «Приклад Постач»",
+    "edrpou": "00000000",
+    "iban": "UA00 0000 0000 0000 0000 0000 0000 0"
+  },
+  "server": { "port": 8080 },
+  "mail": { "from": "billing@example.invalid", "outbox": "out/mail" },
+  "export": { "dir": "out/export", "filePrefix": "oblik-" },
+  "reminders": { "daysBeforeDue": 3 }
+}

@@ -1,0 +1,776 @@
+[
+  {
+    "id": 1,
+    "customer_id": 1,
+    "created_at": "2026-03-01",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 17,
+        "title": "Діркопробивач",
+        "qty": 20,
+        "unit_price_kopecks": 8750
+      },
+      {
+        "product_id": 3,
+        "title": "Степлер",
+        "qty": 16,
+        "unit_price_kopecks": 13750
+      },
+      {
+        "product_id": 8,
+        "title": "Папка-реєстратор",
+        "qty": 13,
+        "unit_price_kopecks": 6750
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "customer_id": 2,
+    "created_at": "2026-03-02",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 7,
+        "title": "Файли А4, 100 шт",
+        "qty": 5,
+        "unit_price_kopecks": 15250
+      },
+      {
+        "product_id": 13,
+        "title": "Коректор",
+        "qty": 19,
+        "unit_price_kopecks": 2750
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "customer_id": 3,
+    "created_at": "2026-03-03",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 12,
+        "title": "Ножиці офісні",
+        "qty": 10,
+        "unit_price_kopecks": 9500
+      },
+      {
+        "product_id": 3,
+        "title": "Степлер",
+        "qty": 19,
+        "unit_price_kopecks": 13750
+      },
+      {
+        "product_id": 3,
+        "title": "Степлер",
+        "qty": 13,
+        "unit_price_kopecks": 13750
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "customer_id": 4,
+    "created_at": "2026-03-04",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 4,
+        "title": "Скріпки 28 мм",
+        "qty": 10,
+        "unit_price_kopecks": 14250
+      },
+      {
+        "product_id": 6,
+        "title": "Зошит 96 арк.",
+        "qty": 6,
+        "unit_price_kopecks": 11000
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "customer_id": 5,
+    "created_at": "2026-03-05",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 12,
+        "title": "Ножиці офісні",
+        "qty": 6,
+        "unit_price_kopecks": 9500
+      },
+      {
+        "product_id": 4,
+        "title": "Скріпки 28 мм",
+        "qty": 13,
+        "unit_price_kopecks": 14250
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "customer_id": 6,
+    "created_at": "2026-03-06",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 1,
+        "title": "Папір А4, пачка",
+        "qty": 2,
+        "unit_price_kopecks": 9000
+      },
+      {
+        "product_id": 17,
+        "title": "Діркопробивач",
+        "qty": 3,
+        "unit_price_kopecks": 8750
+      },
+      {
+        "product_id": 6,
+        "title": "Зошит 96 арк.",
+        "qty": 8,
+        "unit_price_kopecks": 11000
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "customer_id": 7,
+    "created_at": "2026-03-07",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 6,
+        "title": "Зошит 96 арк.",
+        "qty": 16,
+        "unit_price_kopecks": 11000
+      },
+      {
+        "product_id": 4,
+        "title": "Скріпки 28 мм",
+        "qty": 5,
+        "unit_price_kopecks": 14250
+      },
+      {
+        "product_id": 17,
+        "title": "Діркопробивач",
+        "qty": 2,
+        "unit_price_kopecks": 8750
+      },
+      {
+        "product_id": 8,
+        "title": "Папка-реєстратор",
+        "qty": 13,
+        "unit_price_kopecks": 6750
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "customer_id": 8,
+    "created_at": "2026-03-08",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 20,
+        "title": "Етикетки А4",
+        "qty": 10,
+        "unit_price_kopecks": 4250
+      },
+      {
+        "product_id": 15,
+        "title": "Лоток для паперу",
+        "qty": 4,
+        "unit_price_kopecks": 12250
+      },
+      {
+        "product_id": 19,
+        "title": "Конверт С4",
+        "qty": 5,
+        "unit_price_kopecks": 8250
+      },
+      {
+        "product_id": 20,
+        "title": "Етикетки А4",
+        "qty": 2,
+        "unit_price_kopecks": 4250
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "customer_id": 9,
+    "created_at": "2026-03-09",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 15,
+        "title": "Лоток для паперу",
+        "qty": 9,
+        "unit_price_kopecks": 12250
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "customer_id": 10,
+    "created_at": "2026-03-10",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 14,
+        "title": "Блок для нотаток",
+        "qty": 1,
+        "unit_price_kopecks": 14250
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "customer_id": 11,
+    "created_at": "2026-03-11",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 12,
+        "title": "Ножиці офісні",
+        "qty": 10,
+        "unit_price_kopecks": 9500
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "customer_id": 12,
+    "created_at": "2026-03-12",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 11,
+        "title": "Клей-олівець",
+        "qty": 20,
+        "unit_price_kopecks": 7500
+      },
+      {
+        "product_id": 10,
+        "title": "Олівець HB",
+        "qty": 14,
+        "unit_price_kopecks": 6000
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "customer_id": 1,
+    "created_at": "2026-03-01",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 3,
+        "title": "Степлер",
+        "qty": 17,
+        "unit_price_kopecks": 13750
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "customer_id": 2,
+    "created_at": "2026-03-02",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 9,
+        "title": "Ручка кулькова синя",
+        "qty": 10,
+        "unit_price_kopecks": 8750
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "customer_id": 3,
+    "created_at": "2026-03-03",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 7,
+        "title": "Файли А4, 100 шт",
+        "qty": 20,
+        "unit_price_kopecks": 15250
+      },
+      {
+        "product_id": 14,
+        "title": "Блок для нотаток",
+        "qty": 5,
+        "unit_price_kopecks": 14250
+      },
+      {
+        "product_id": 6,
+        "title": "Зошит 96 арк.",
+        "qty": 11,
+        "unit_price_kopecks": 11000
+      },
+      {
+        "product_id": 9,
+        "title": "Ручка кулькова синя",
+        "qty": 18,
+        "unit_price_kopecks": 8750
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "customer_id": 4,
+    "created_at": "2026-03-04",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 19,
+        "title": "Конверт С4",
+        "qty": 1,
+        "unit_price_kopecks": 8250
+      },
+      {
+        "product_id": 3,
+        "title": "Степлер",
+        "qty": 16,
+        "unit_price_kopecks": 13750
+      },
+      {
+        "product_id": 7,
+        "title": "Файли А4, 100 шт",
+        "qty": 5,
+        "unit_price_kopecks": 15250
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "customer_id": 5,
+    "created_at": "2026-03-05",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 2,
+        "title": "Картридж чорний",
+        "qty": 6,
+        "unit_price_kopecks": 9500
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "customer_id": 6,
+    "created_at": "2026-03-06",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 1,
+        "title": "Папір А4, пачка",
+        "qty": 10,
+        "unit_price_kopecks": 9000
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "customer_id": 7,
+    "created_at": "2026-03-07",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 15,
+        "title": "Лоток для паперу",
+        "qty": 5,
+        "unit_price_kopecks": 12250
+      },
+      {
+        "product_id": 3,
+        "title": "Степлер",
+        "qty": 10,
+        "unit_price_kopecks": 13750
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "customer_id": 8,
+    "created_at": "2026-03-08",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 6,
+        "title": "Зошит 96 арк.",
+        "qty": 3,
+        "unit_price_kopecks": 11000
+      },
+      {
+        "product_id": 7,
+        "title": "Файли А4, 100 шт",
+        "qty": 7,
+        "unit_price_kopecks": 15250
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "customer_id": 9,
+    "created_at": "2026-03-09",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 12,
+        "title": "Ножиці офісні",
+        "qty": 5,
+        "unit_price_kopecks": 9500
+      },
+      {
+        "product_id": 9,
+        "title": "Ручка кулькова синя",
+        "qty": 14,
+        "unit_price_kopecks": 8750
+      },
+      {
+        "product_id": 2,
+        "title": "Картридж чорний",
+        "qty": 15,
+        "unit_price_kopecks": 9500
+      },
+      {
+        "product_id": 1,
+        "title": "Папір А4, пачка",
+        "qty": 14,
+        "unit_price_kopecks": 9000
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "customer_id": 10,
+    "created_at": "2026-03-10",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 16,
+        "title": "Калькулятор настільний",
+        "qty": 18,
+        "unit_price_kopecks": 14000
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "customer_id": 11,
+    "created_at": "2026-03-11",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 10,
+        "title": "Олівець HB",
+        "qty": 12,
+        "unit_price_kopecks": 6000
+      },
+      {
+        "product_id": 12,
+        "title": "Ножиці офісні",
+        "qty": 12,
+        "unit_price_kopecks": 9500
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "customer_id": 12,
+    "created_at": "2026-03-12",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 16,
+        "title": "Калькулятор настільний",
+        "qty": 12,
+        "unit_price_kopecks": 14000
+      },
+      {
+        "product_id": 1,
+        "title": "Папір А4, пачка",
+        "qty": 14,
+        "unit_price_kopecks": 9000
+      },
+      {
+        "product_id": 7,
+        "title": "Файли А4, 100 шт",
+        "qty": 17,
+        "unit_price_kopecks": 15250
+      },
+      {
+        "product_id": 15,
+        "title": "Лоток для паперу",
+        "qty": 5,
+        "unit_price_kopecks": 12250
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "customer_id": 1,
+    "created_at": "2026-03-01",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 7,
+        "title": "Файли А4, 100 шт",
+        "qty": 13,
+        "unit_price_kopecks": 15250
+      },
+      {
+        "product_id": 1,
+        "title": "Папір А4, пачка",
+        "qty": 19,
+        "unit_price_kopecks": 9000
+      },
+      {
+        "product_id": 11,
+        "title": "Клей-олівець",
+        "qty": 15,
+        "unit_price_kopecks": 7500
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "customer_id": 2,
+    "created_at": "2026-03-02",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 2,
+        "title": "Картридж чорний",
+        "qty": 20,
+        "unit_price_kopecks": 9500
+      },
+      {
+        "product_id": 2,
+        "title": "Картридж чорний",
+        "qty": 1,
+        "unit_price_kopecks": 9500
+      },
+      {
+        "product_id": 12,
+        "title": "Ножиці офісні",
+        "qty": 18,
+        "unit_price_kopecks": 9500
+      },
+      {
+        "product_id": 4,
+        "title": "Скріпки 28 мм",
+        "qty": 3,
+        "unit_price_kopecks": 14250
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "customer_id": 3,
+    "created_at": "2026-03-03",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 4,
+        "title": "Скріпки 28 мм",
+        "qty": 13,
+        "unit_price_kopecks": 14250
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "customer_id": 4,
+    "created_at": "2026-03-04",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 9,
+        "title": "Ручка кулькова синя",
+        "qty": 7,
+        "unit_price_kopecks": 8750
+      },
+      {
+        "product_id": 2,
+        "title": "Картридж чорний",
+        "qty": 17,
+        "unit_price_kopecks": 9500
+      },
+      {
+        "product_id": 2,
+        "title": "Картридж чорний",
+        "qty": 19,
+        "unit_price_kopecks": 9500
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "customer_id": 5,
+    "created_at": "2026-03-05",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 10,
+        "title": "Олівець HB",
+        "qty": 15,
+        "unit_price_kopecks": 6000
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "customer_id": 6,
+    "created_at": "2026-03-06",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 19,
+        "title": "Конверт С4",
+        "qty": 15,
+        "unit_price_kopecks": 8250
+      },
+      {
+        "product_id": 12,
+        "title": "Ножиці офісні",
+        "qty": 18,
+        "unit_price_kopecks": 9500
+      },
+      {
+        "product_id": 17,
+        "title": "Діркопробивач",
+        "qty": 13,
+        "unit_price_kopecks": 8750
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "customer_id": 7,
+    "created_at": "2026-02-07",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 2,
+        "title": "Картридж чорний",
+        "qty": 5,
+        "unit_price_kopecks": 9500
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "customer_id": 8,
+    "created_at": "2026-02-08",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 16,
+        "title": "Калькулятор настільний",
+        "qty": 1,
+        "unit_price_kopecks": 14000
+      },
+      {
+        "product_id": 13,
+        "title": "Коректор",
+        "qty": 16,
+        "unit_price_kopecks": 2750
+      },
+      {
+        "product_id": 10,
+        "title": "Олівець HB",
+        "qty": 17,
+        "unit_price_kopecks": 6000
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "customer_id": 9,
+    "created_at": "2026-02-09",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 20,
+        "title": "Етикетки А4",
+        "qty": 10,
+        "unit_price_kopecks": 4250
+      },
+      {
+        "product_id": 7,
+        "title": "Файли А4, 100 шт",
+        "qty": 19,
+        "unit_price_kopecks": 15250
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "customer_id": 10,
+    "created_at": "2026-02-10",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 19,
+        "title": "Конверт С4",
+        "qty": 19,
+        "unit_price_kopecks": 8250
+      },
+      {
+        "product_id": 7,
+        "title": "Файли А4, 100 шт",
+        "qty": 15,
+        "unit_price_kopecks": 15250
+      },
+      {
+        "product_id": 20,
+        "title": "Етикетки А4",
+        "qty": 14,
+        "unit_price_kopecks": 4250
+      },
+      {
+        "product_id": 17,
+        "title": "Діркопробивач",
+        "qty": 16,
+        "unit_price_kopecks": 8750
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "customer_id": 11,
+    "created_at": "2026-02-11",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 7,
+        "title": "Файли А4, 100 шт",
+        "qty": 20,
+        "unit_price_kopecks": 15250
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "customer_id": 12,
+    "created_at": "2026-02-12",
+    "status": "invoiced",
+    "lines": [
+      {
+        "product_id": 14,
+        "title": "Блок для нотаток",
+        "qty": 13,
+        "unit_price_kopecks": 14250
+      }
+    ]
+  }
+]

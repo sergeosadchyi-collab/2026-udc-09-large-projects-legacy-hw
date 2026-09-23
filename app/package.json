@@ -1,0 +1,17 @@
+{
+  "name": "prykladpostach-billing",
+  "version": "3.4.1",
+  "private": true,
+  "description": "Billing back office: invoices, payments, reminders, exports",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "export": "node bin/nightly-export.js",
+    "reminders": "node bin/send-reminders.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "UNLICENSED"
+}

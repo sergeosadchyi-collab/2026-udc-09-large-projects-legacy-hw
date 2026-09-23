@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "sku": "SKU-1000",
+    "title": "Папір А4, пачка",
+    "unit": "уп",
+    "price_kopecks": 9000,
+    "active": true
+  },
+  {
+    "id": 2,
+    "sku": "SKU-1001",
+    "title": "Картридж чорний",
+    "unit": "шт",
+    "price_kopecks": 9500,
+    "active": true
+  },
+  {
+    "id": 3,
+    "sku": "SKU-1002",
+    "title": "Степлер",
+    "unit": "шт",
+    "price_kopecks": 13750,
+    "active": true
+  },
+  {
+    "id": 4,
+    "sku": "SKU-1003",
+    "title": "Скріпки 28 мм",
+    "unit": "шт",
+    "price_kopecks": 14250,
+    "active": true
+  },
+  {
+    "id": 5,
+    "sku": "SKU-1004",
+    "title": "Маркер перманентний",
+    "unit": "уп",
+    "price_kopecks": 9750,
+    "active": true
+  },
+  {
+    "id": 6,
+    "sku": "SKU-1005",
+    "title": "Зошит 96 арк.",
+    "unit": "шт",
+    "price_kopecks": 11000,
+    "active": true
+  },
+  {
+    "id": 7,
+    "sku": "SKU-1006",
+    "title": "Файли А4, 100 шт",
+    "unit": "шт",
+    "price_kopecks": 15250,
+    "active": true
+  },
+  {
+    "id": 8,
+    "sku": "SKU-1007",
+    "title": "Папка-реєстратор",
+    "unit": "шт",
+    "price_kopecks": 6750,
+    "active": true
+  },
+  {
+    "id": 9,
+    "sku": "SKU-1008",
+    "title": "Ручка кулькова синя",
+    "unit": "уп",
+    "price_kopecks": 8750,
+    "active": true
+  },
+  {
+    "id": 10,
+    "sku": "SKU-1009",
+    "title": "Олівець HB",
+    "unit": "шт",
+    "price_kopecks": 6000,
+    "active": true
+  },
+  {
+    "id": 11,
+    "sku": "SKU-1010",
+    "title": "Клей-олівець",
+    "unit": "шт",
+    "price_kopecks": 7500,
+    "active": true
+  },
+  {
+    "id": 12,
+    "sku": "SKU-1011",
+    "title": "Ножиці офісні",
+    "unit": "шт",
+    "price_kopecks": 9500,
+    "active": true
+  },
+  {
+    "id": 13,
+    "sku": "SKU-1012",
+    "title": "Коректор",
+    "unit": "уп",
+    "price_kopecks": 2750,
+    "active": true
+  },
+  {
+    "id": 14,
+    "sku": "SKU-1013",
+    "title": "Блок для нотаток",
+    "unit": "шт",
+    "price_kopecks": 14250,
+    "active": false
+  },
+  {
+    "id": 15,
+    "sku": "SKU-1014",
+    "title": "Лоток для паперу",
+    "unit": "шт",
+    "price_kopecks": 12250,
+    "active": true
+  },
+  {
+    "id": 16,
+    "sku": "SKU-1015",
+    "title": "Калькулятор настільний",
+    "unit": "шт",
+    "price_kopecks": 14000,
+    "active": true
+  },
+  {
+    "id": 17,
+    "sku": "SKU-1016",
+    "title": "Діркопробивач",
+    "unit": "уп",
+    "price_kopecks": 8750,
+    "active": true
+  },
+  {
+    "id": 18,
+    "sku": "SKU-1017",
+    "title": "Скотч 48 мм",
+    "unit": "шт",
+    "price_kopecks": 12250,
+    "active": true
+  },
+  {
+    "id": 19,
+    "sku": "SKU-1018",
+    "title": "Конверт С4",
+    "unit": "шт",
+    "price_kopecks": 8250,
+    "active": true
+  },
+  {
+    "id": 20,
+    "sku": "SKU-1019",
+    "title": "Етикетки А4",
+    "unit": "шт",
+    "price_kopecks": 4250,
+    "active": true
+  }
+]

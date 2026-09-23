@@ -1,0 +1,8 @@
+node_modules/
+app/out/
+*.log
+.env
+.env.*
+.DS_Store
+# Windows Git Bash safety: never commit an accidental NUL device file
+nul

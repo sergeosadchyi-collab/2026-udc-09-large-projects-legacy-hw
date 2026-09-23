@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "ТОВ «Зелений Кут»",
+    "contact_name": "Ірина",
+    "edrpou": "10000001",
+    "email": "client1@example.invalid",
+    "city": "Київ",
+    "created_at": "2017-01-10",
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "ТОВ «Липовий Цвіт»",
+    "contact_name": "Андрій",
+    "edrpou": "10000002",
+    "email": "client2@example.invalid",
+    "city": "Львів",
+    "created_at": "2018-02-11",
+    "active": true
+  },
+  {
+    "id": 3,
+    "name": "ФОП Приклад-1",
+    "contact_name": "Олена",
+    "edrpou": "10000003",
+    "email": "client3@example.invalid",
+    "city": "Одеса",
+    "created_at": "2019-03-12",
+    "active": true
+  },
+  {
+    "id": 4,
+    "name": "ТОВ «Сонячна Долина»",
+    "contact_name": "Максим",
+    "edrpou": "10000004",
+    "email": "client4@example.invalid",
+    "city": "Харків",
+    "created_at": "2020-04-13",
+    "active": true
+  },
+  {
+    "id": 5,
+    "name": "ТОВ «Дубовий Гай»",
+    "contact_name": "Наталія",
+    "edrpou": "10000005",
+    "email": "client5@example.invalid",
+    "city": "Харків",
+    "created_at": "2021-05-14",
+    "active": true
+  },
+  {
+    "id": 6,
+    "name": "ФОП Приклад-2",
+    "contact_name": "Богдан",
+    "edrpou": "10000006",
+    "email": "client6@example.invalid",
+    "city": "Одеса",
+    "created_at": "2022-06-15",
+    "active": true
+  },
+  {
+    "id": 7,
+    "name": "ТОВ «Тиха Гавань»",
+    "contact_name": "Світлана",
+    "edrpou": "10000007",
+    "email": "client7@example.invalid",
+    "city": "Львів",
+    "created_at": "2023-07-16",
+    "active": true
+  },
+  {
+    "id": 8,
+    "name": "ТОВ «Верхній Млин»",
+    "contact_name": "Олег",
+    "edrpou": "10000008",
+    "email": "client8@example.invalid",
+    "city": "Київ",
+    "created_at": "2024-08-17",
+    "active": false
+  },
+  {
+    "id": 9,
+    "name": "ТОВ «Ранкова Роса»",
+    "contact_name": "Катерина",
+    "edrpou": "10000009",
+    "email": "client9@example.invalid",
+    "city": "Харків",
+    "created_at": "2017-09-18",
+    "active": true
+  },
+  {
+    "id": 10,
+    "name": "ФОП Приклад-3",
+    "contact_name": "Віктор",
+    "edrpou": "10000010",
+    "email": "client10@example.invalid",
+    "city": "Київ",
+    "created_at": "2018-01-10",
+    "active": true
+  },
+  {
+    "id": 11,
+    "name": "ТОВ «Кам'яний Міст»",
+    "contact_name": "Юлія",
+    "edrpou": "10000011",
+    "email": "client11@example.invalid",
+    "city": "Одеса",
+    "created_at": "2019-02-11",
+    "active": true
+  },
+  {
+    "id": 12,
+    "name": "ТОВ «Срібний Струмок»",
+    "contact_name": "Дмитро",
+    "edrpou": "10000012",
+    "email": "client12@example.invalid",
+    "city": "Львів",
+    "created_at": "2020-03-12",
+    "active": true
+  }
+]
