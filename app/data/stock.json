@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "product_id": 1,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 133,
+    "qty_reserved": 6,
+    "reorder_level": 25,
+    "updated_at": "2026-09-02"
+  },
+  {
+    "id": 2,
+    "product_id": 2,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 160,
+    "qty_reserved": 8,
+    "reorder_level": 20,
+    "updated_at": "2026-09-01"
+  },
+  {
+    "id": 3,
+    "product_id": 3,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 6,
+    "qty_reserved": 2,
+    "reorder_level": 10,
+    "updated_at": "2026-09-01"
+  },
+  {
+    "id": 4,
+    "product_id": 4,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 76,
+    "qty_reserved": 3,
+    "reorder_level": 25,
+    "updated_at": "2026-09-02"
+  },
+  {
+    "id": 5,
+    "product_id": 5,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 147,
+    "qty_reserved": 4,
+    "reorder_level": 15,
+    "updated_at": "2026-09-01"
+  },
+  {
+    "id": 6,
+    "product_id": 6,
+    "warehouse": "LVIV-2",
+    "qty_on_hand": 183,
+    "qty_reserved": 10,
+    "reorder_level": 25,
+    "updated_at": "2026-09-01"
+  },
+  {
+    "id": 7,
+    "product_id": 7,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 84,
+    "qty_reserved": 10,
+    "reorder_level": 10,
+    "updated_at": "2026-08-29"
+  },
+  {
+    "id": 8,
+    "product_id": 8,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 4,
+    "qty_reserved": 0,
+    "reorder_level": 15,
+    "updated_at": "2026-06-30"
+  },
+  {
+    "id": 9,
+    "product_id": 9,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 194,
+    "qty_reserved": 9,
+    "reorder_level": 10,
+    "updated_at": "2026-09-01"
+  },
+  {
+    "id": 10,
+    "product_id": 10,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 143,
+    "qty_reserved": 0,
+    "reorder_level": 15,
+    "updated_at": "2026-09-02"
+  },
+  {
+    "id": 11,
+    "product_id": 11,
+    "warehouse": "LVIV-2",
+    "qty_on_hand": 162,
+    "qty_reserved": 3,
+    "reorder_level": 20,
+    "updated_at": "2026-09-01"
+  },
+  {
+    "id": 12,
+    "product_id": 12,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 132,
+    "qty_reserved": 6,
+    "reorder_level": 20,
+    "updated_at": "2026-09-02"
+  },
+  {
+    "id": 13,
+    "product_id": 13,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 12,
+    "qty_reserved": 5,
+    "reorder_level": 20,
+    "updated_at": "2026-07-01"
+  },
+  {
+    "id": 14,
+    "product_id": 14,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 1,
+    "qty_reserved": 0,
+    "reorder_level": 5,
+    "updated_at": "2026-08-29"
+  },
+  {
+    "id": 15,
+    "product_id": 15,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 170,
+    "qty_reserved": 2,
+    "reorder_level": 25,
+    "updated_at": "2026-09-01"
+  },
+  {
+    "id": 16,
+    "product_id": 16,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 186,
+    "qty_reserved": 1,
+    "reorder_level": 25,
+    "updated_at": "2026-09-01"
+  },
+  {
+    "id": 17,
+    "product_id": 17,
+    "warehouse": "LVIV-2",
+    "qty_on_hand": 0,
+    "qty_reserved": 0,
+    "reorder_level": 8,
+    "updated_at": "2026-09-01"
+  },
+  {
+    "id": 18,
+    "product_id": 18,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 118,
+    "qty_reserved": 0,
+    "reorder_level": 10,
+    "updated_at": "2026-08-29"
+  },
+  {
+    "id": 19,
+    "product_id": 19,
+    "warehouse": "LVIV-2",
+    "qty_on_hand": 25,
+    "qty_reserved": 18,
+    "reorder_level": 10,
+    "updated_at": "2026-09-01"
+  },
+  {
+    "id": 20,
+    "product_id": 20,
+    "warehouse": "KYIV-1",
+    "qty_on_hand": 92,
+    "qty_reserved": 7,
+    "reorder_level": 20,
+    "updated_at": "2026-05-29"
+  }
+]

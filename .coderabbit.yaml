@@ -1,0 +1,194 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+#
+# CodeRabbit config — auto-review of UDC Workshop 9 homework PRs.
+# Workshop: "Робота з великими проєктами та legacy кодом".
+#
+# NOTE: every custom_checks `name` MUST stay under 50 characters. If any name
+# hits the limit the WHOLE file fails validation and CodeRabbit silently falls
+# back to defaults — reviews come back in English and no task grading runs.
+# Validate against the published schema before publishing.
+#
+# This repo is public and discovery is part of the task: checks are phrased by
+# OUTCOME and must not name where the non-obvious consumer lives.
+
+language: "uk-UA"
+tone_instructions: >
+  Ментор воркшопу UDC. Відповідай українською, доброзичливо але вимогливо.
+  Що пропущено — поясни що і чому. Статуси: ✅ зроблено, ⚠️ частково, ❌ пропущено.
+
+early_access: false
+
+reviews:
+  profile: "assertive"
+  request_changes_workflow: false
+  high_level_summary: true
+  high_level_summary_placeholder: "@coderabbitai summary"
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  changed_files_summary: true
+  sequence_diagrams: false
+
+  auto_review:
+    enabled: true
+    drafts: true
+    auto_incremental_review: true
+    auto_pause_after_reviewed_commits: 0
+    base_branches:
+      - ".*"
+    ignore_title_keywords:
+      - "WIP"
+      - "[skip review]"
+    ignore_usernames:
+      - "dependabot[bot]"
+      - "renovate[bot]"
+      - "github-actions[bot]"
+
+  # ── File filters ──────────────────────────────────────────────
+  path_filters:
+    - "app/lib/**"
+    - "app/test/**"
+    - "app/bin/**"
+    - "app/config/**"
+    - "app/data/**"
+    - "app/AGENTS.md"
+    - "app/package.json"
+    - "docs/**"
+    - "AGENTS.md"
+    - "CLAUDE.md"
+    - "!app/out/**"
+    - "!**/node_modules/**"
+    - "!*.lock"
+    - "!**/package-lock.json"
+
+  # ── Path-specific review instructions ─────────────────────────
+  path_instructions:
+    - path: "app/lib/format.js"
+      instructions: |
+        Це спільний форматер legacy-системи. До нього дістаються кілька модулів —
+        частина напряму, частина через динамічний пошук функції за іменем, яке
+        складається з конфігурації. Якщо поведінка форматування дат змінена ТУТ,
+        перевір, чи всі модулі, які нею користуються, змінились НАВМИСНО: вихід для
+        людей (рахунки, листи) за тікетом має стати дд.мм.рррр, а вихід, який читає
+        інша система, мав лишитися байт-у-байт таким, як був. Якщо змінено формат
+        для машинного споживача — це ❌ з поясненням, що саме зламається. Не
+        називай студенту, який саме це модуль, якщо він сам його не знайшов, —
+        поясни принцип і попроси перевірити всіх споживачів.
+
+    - path: "app/test/**"
+      instructions: |
+        Task B/C. Характеризаційні тести мають фіксувати ПОТОЧНИЙ вихід кожного
+        споживача форматування дат — включно з тими, до яких не веде пошук за
+        іменем функції. Golden-master файли — нормальна практика. Перевір, чи
+        тести писались ДО зміни: в історії комітів PR має бути окремий коміт із
+        тестами перед комітом зі зміною. Засіяні 106 тестів мали лишитись
+        зеленими; змінювати очікування можна лише для виходів, які тікет
+        навмисно змінює.
+
+    - path: "app/data/**"
+      instructions: |
+        Фікстури спільні для тестів і НЕ мали змінюватися. Будь-яка зміна тут — ❌.
+
+    - path: "docs/codebase-map.md"
+      instructions: |
+        Task A. Карта має відповідати коду, а не старій документації в app/docs/
+        (частина її застаріла навмисно). Перевір, що є ≥10 перевірених тверджень із
+        доказами (файл:рядок або команда) і записана вартість навігації агента.
+        Якщо карта повторює твердження зі старої документації як правду без
+        перевірки — ⚠️ з поясненням.
+
+    - path: "docs/impact.md"
+      instructions: |
+        Task B. Перелік споживачів має бути повним, для кожного — як він
+        дістається до форматування, хто читає вихід (людина чи інша система), що з
+        ним має статися. Розділ 5 має пояснювати кожне змінене очікування в тестах.
+
+    - path: "app/AGENTS.md"
+      instructions: |
+        Task D. Має містити конкретне неочевидне знання про цю систему (контракти з
+        іншими системами, пастки, застаріла документація) з посиланнями на файли.
+        Загальні поради «пиши тести» без прив'язки до цього коду — ⚠️.
+
+    - path: "docs/ai-on-legacy.md"
+      instructions: |
+        Task D. ≥3 конкретні випадки: що просили, що агент сказав/зробив, як
+        помітили, чому він так вирішив, як виправили. Загальні фрази — ⚠️.
+
+    - path: "docs/task-e-bonus.md"
+      instructions: |
+        Task E (bonus) — рівно один із трьох шляхів, заповнений конкретно.
+        Необовʼязкове; відсутність файлу — не помилка.
+
+  # ── Pre-merge checks (grading) ────────────────────────────────
+  pre_merge_checks:
+    title:
+      mode: "warning"
+      requirements: >
+        PR title should follow: "WS9: <participant-name>".
+
+    description:
+      mode: "warning"
+
+    docstrings:
+      mode: "off"
+
+    custom_checks:
+      - mode: "warning"
+        name: "Task A — verified codebase map"
+        instructions: >
+          Static review only — do NOT execute anything. Check docs/codebase-map.md
+          exists, describes entry points, modules, data storage and external
+          integrations of app/, records the agent's navigation cost, and verifies
+          at least 10 claims against the code with evidence (file:line or a
+          command). The legacy docs in app/docs/ are partly stale on purpose; a
+          map that repeats them as fact without checking is a WARNING. PASS if
+          ten or more claims carry evidence.
+
+      - mode: "warning"
+        name: "Task B — impact list + characterization"
+        instructions: >
+          Static review only — do NOT run tests. Check docs/impact.md lists every
+          consumer whose output changes if the shared date formatter changes,
+          including consumers that reach it through configuration or dynamically
+          built names rather than a direct call, and says for each whether a
+          person or another system reads the output. Check app/test/ gained
+          characterization tests pinning the CURRENT output of those consumers,
+          committed in a separate commit BEFORE the change. PASS if both hold.
+
+      - mode: "warning"
+        name: "Task C — change without breaking others"
+        instructions: >
+          Static review only. Check that dates people read (invoice HTML,
+          reminder mails) now use DD.MM.YYYY, and that no output consumed by
+          another system changed format — a shared formatter changed in place so
+          that a machine-read file changes is a FAIL. Check every test
+          expectation that was changed is justified in docs/impact.md, and that
+          the diff is small with no unrelated refactoring. PASS if all hold.
+
+      - mode: "warning"
+        name: "Task D — AI mistakes + app/AGENTS.md"
+        instructions: >
+          Static review only. Check docs/ai-on-legacy.md has at least three
+          concrete cases with evidence, and app/AGENTS.md exists with specific,
+          non-obvious knowledge about this system (contracts with other systems,
+          traps, which docs are stale) referencing files. Generic advice without
+          ties to this code FAILS. "Nothing went wrong" passes only if it lists
+          what was checked.
+
+      - mode: "warning"
+        name: "Task E — bonus (one path)"
+        instructions: >
+          Optional. If docs/task-e-bonus.md exists, check exactly ONE of the three
+          paths is completed with concrete detail and a conclusion. Absence of
+          the file is NOT a failure.
+
+      - mode: "warning"
+        name: "Fixtures, output and secrets clean"
+        instructions: >
+          Static review only. Check the diff does not modify app/data/*.json, does
+          not commit anything under app/out/, adds no npm dependencies to
+          app/package.json, and contains no credentials, tokens, API keys or .env
+          files. FAIL naming the file if any of these appear.
+
+chat:
+  auto_reply: true

@@ -1,0 +1,389 @@
+[
+  {
+    "id": 1,
+    "product_id": 2,
+    "sku": "SKU-1001",
+    "old_price_kopecks": 7200,
+    "new_price_kopecks": 7850,
+    "changed_at": "2024-02-12",
+    "changed_by": null,
+    "source": "excel"
+  },
+  {
+    "id": 2,
+    "product_id": 9,
+    "sku": "SKU-1008",
+    "old_price_kopecks": 7550,
+    "new_price_kopecks": 8350,
+    "changed_at": "2024-02-12",
+    "changed_by": null,
+    "source": "excel"
+  },
+  {
+    "id": 3,
+    "product_id": 13,
+    "sku": "SKU-1012",
+    "old_price_kopecks": 2500,
+    "new_price_kopecks": 2750,
+    "changed_at": "2024-02-12",
+    "changed_by": null,
+    "source": "excel"
+  },
+  {
+    "id": 4,
+    "product_id": 2,
+    "sku": "SKU-1001",
+    "old_price_kopecks": 7850,
+    "new_price_kopecks": 8350,
+    "changed_at": "2024-09-02",
+    "changed_by": null,
+    "source": "excel"
+  },
+  {
+    "id": 5,
+    "product_id": 6,
+    "sku": "SKU-1005",
+    "old_price_kopecks": 8350,
+    "new_price_kopecks": 9500,
+    "changed_at": "2024-09-02",
+    "changed_by": null,
+    "source": "excel"
+  },
+  {
+    "id": 6,
+    "product_id": 9,
+    "sku": "SKU-1008",
+    "old_price_kopecks": 8350,
+    "new_price_kopecks": 8750,
+    "changed_at": "2024-09-02",
+    "changed_by": null,
+    "source": "excel"
+  },
+  {
+    "id": 7,
+    "product_id": 14,
+    "sku": "SKU-1013",
+    "old_price_kopecks": 10250,
+    "new_price_kopecks": 11800,
+    "changed_at": "2024-09-02",
+    "changed_by": null,
+    "source": "excel"
+  },
+  {
+    "id": 8,
+    "product_id": 19,
+    "sku": "SKU-1018",
+    "old_price_kopecks": 6600,
+    "new_price_kopecks": 7550,
+    "changed_at": "2024-09-02",
+    "changed_by": null,
+    "source": "excel"
+  },
+  {
+    "id": 9,
+    "product_id": 2,
+    "sku": "SKU-1001",
+    "old_price_kopecks": 8350,
+    "new_price_kopecks": 9500,
+    "changed_at": "2025-03-17",
+    "changed_by": 3,
+    "source": "import",
+    "note": "новий постачальник"
+  },
+  {
+    "id": 10,
+    "product_id": 3,
+    "sku": "SKU-1002",
+    "old_price_kopecks": 10850,
+    "new_price_kopecks": 11850,
+    "changed_at": "2025-03-17",
+    "changed_by": 3,
+    "source": "import"
+  },
+  {
+    "id": 11,
+    "product_id": 6,
+    "sku": "SKU-1005",
+    "old_price_kopecks": 9500,
+    "new_price_kopecks": 11000,
+    "changed_at": "2025-03-17",
+    "changed_by": 7,
+    "source": "import",
+    "note": "курс USD"
+  },
+  {
+    "id": 12,
+    "product_id": 7,
+    "sku": "SKU-1006",
+    "old_price_kopecks": 13750,
+    "new_price_kopecks": 14450,
+    "changed_at": "2025-03-17",
+    "changed_by": 12,
+    "source": "import"
+  },
+  {
+    "id": 13,
+    "product_id": 11,
+    "sku": "SKU-1010",
+    "old_price_kopecks": 6550,
+    "new_price_kopecks": 7000,
+    "changed_at": "2025-03-17",
+    "changed_by": 3,
+    "source": "import"
+  },
+  {
+    "id": 14,
+    "product_id": 14,
+    "sku": "SKU-1013",
+    "old_price_kopecks": 11800,
+    "new_price_kopecks": 13350,
+    "changed_at": "2025-03-17",
+    "changed_by": 3,
+    "source": "import",
+    "note": "новий постачальник"
+  },
+  {
+    "id": 15,
+    "product_id": 18,
+    "sku": "SKU-1017",
+    "old_price_kopecks": 9700,
+    "new_price_kopecks": 10850,
+    "changed_at": "2025-03-17",
+    "changed_by": 3,
+    "source": "import"
+  },
+  {
+    "id": 16,
+    "product_id": 19,
+    "sku": "SKU-1018",
+    "old_price_kopecks": 7550,
+    "new_price_kopecks": 7900,
+    "changed_at": "2025-03-17",
+    "changed_by": 7,
+    "source": "import"
+  },
+  {
+    "id": 17,
+    "product_id": 20,
+    "sku": "SKU-1019",
+    "old_price_kopecks": 3400,
+    "new_price_kopecks": 3700,
+    "changed_at": "2025-03-17",
+    "changed_by": 3,
+    "source": "import"
+  },
+  {
+    "id": 18,
+    "product_id": 1,
+    "sku": "SKU-1000",
+    "old_price_kopecks": 7250,
+    "new_price_kopecks": 8100,
+    "changed_at": "2025-10-06",
+    "changed_by": 3,
+    "source": "import"
+  },
+  {
+    "id": 19,
+    "product_id": 3,
+    "sku": "SKU-1002",
+    "old_price_kopecks": 11850,
+    "new_price_kopecks": 13750,
+    "changed_at": "2025-10-06",
+    "changed_by": 7,
+    "source": "import"
+  },
+  {
+    "id": 20,
+    "product_id": 4,
+    "sku": "SKU-1003",
+    "old_price_kopecks": 13050,
+    "new_price_kopecks": 14250,
+    "changed_at": "2025-10-06",
+    "changed_by": 12,
+    "source": "import",
+    "note": "курс USD"
+  },
+  {
+    "id": 21,
+    "product_id": 5,
+    "sku": "SKU-1004",
+    "old_price_kopecks": 7950,
+    "new_price_kopecks": 8750,
+    "changed_at": "2025-10-06",
+    "changed_by": 3,
+    "source": "import"
+  },
+  {
+    "id": 22,
+    "product_id": 7,
+    "sku": "SKU-1006",
+    "old_price_kopecks": 14450,
+    "new_price_kopecks": 15250,
+    "changed_at": "2025-10-06",
+    "changed_by": 3,
+    "source": "import"
+  },
+  {
+    "id": 23,
+    "product_id": 8,
+    "sku": "SKU-1007",
+    "old_price_kopecks": 5900,
+    "new_price_kopecks": 6250,
+    "changed_at": "2025-10-06",
+    "changed_by": 3,
+    "source": "import",
+    "note": "курс USD"
+  },
+  {
+    "id": 24,
+    "product_id": 10,
+    "sku": "SKU-1009",
+    "old_price_kopecks": 5000,
+    "new_price_kopecks": 5750,
+    "changed_at": "2025-10-06",
+    "changed_by": 12,
+    "source": "import"
+  },
+  {
+    "id": 25,
+    "product_id": 11,
+    "sku": "SKU-1010",
+    "old_price_kopecks": 7000,
+    "new_price_kopecks": 7500,
+    "changed_at": "2025-10-06",
+    "changed_by": 12,
+    "source": "import"
+  },
+  {
+    "id": 26,
+    "product_id": 12,
+    "sku": "SKU-1011",
+    "old_price_kopecks": 8850,
+    "new_price_kopecks": 9500,
+    "changed_at": "2025-10-06",
+    "changed_by": 7,
+    "source": "import"
+  },
+  {
+    "id": 27,
+    "product_id": 14,
+    "sku": "SKU-1013",
+    "old_price_kopecks": 13350,
+    "new_price_kopecks": 14250,
+    "changed_at": "2025-10-06",
+    "changed_by": 3,
+    "source": "import"
+  },
+  {
+    "id": 28,
+    "product_id": 15,
+    "sku": "SKU-1014",
+    "old_price_kopecks": 11450,
+    "new_price_kopecks": 12250,
+    "changed_at": "2025-10-06",
+    "changed_by": 3,
+    "source": "import",
+    "note": "індексація"
+  },
+  {
+    "id": 29,
+    "product_id": 17,
+    "sku": "SKU-1016",
+    "old_price_kopecks": 8100,
+    "new_price_kopecks": 8750,
+    "changed_at": "2025-10-06",
+    "changed_by": 3,
+    "source": "import"
+  },
+  {
+    "id": 30,
+    "product_id": 18,
+    "sku": "SKU-1017",
+    "old_price_kopecks": 10850,
+    "new_price_kopecks": 12250,
+    "changed_at": "2025-10-06",
+    "changed_by": 7,
+    "source": "import"
+  },
+  {
+    "id": 31,
+    "product_id": 19,
+    "sku": "SKU-1018",
+    "old_price_kopecks": 7900,
+    "new_price_kopecks": 8250,
+    "changed_at": "2025-10-06",
+    "changed_by": 12,
+    "source": "import"
+  },
+  {
+    "id": 32,
+    "product_id": 20,
+    "sku": "SKU-1019",
+    "old_price_kopecks": 3700,
+    "new_price_kopecks": 4050,
+    "changed_at": "2025-10-06",
+    "changed_by": 7,
+    "source": "import"
+  },
+  {
+    "id": 33,
+    "product_id": 1,
+    "sku": "SKU-1000",
+    "old_price_kopecks": 8100,
+    "new_price_kopecks": 9000,
+    "changed_at": "2026-02-02",
+    "changed_by": 3,
+    "source": "import"
+  },
+  {
+    "id": 34,
+    "product_id": 5,
+    "sku": "SKU-1004",
+    "old_price_kopecks": 8750,
+    "new_price_kopecks": 9750,
+    "changed_at": "2026-02-02",
+    "changed_by": 3,
+    "source": "import"
+  },
+  {
+    "id": 35,
+    "product_id": 8,
+    "sku": "SKU-1007",
+    "old_price_kopecks": 6250,
+    "new_price_kopecks": 6750,
+    "changed_at": "2026-02-02",
+    "changed_by": 3,
+    "source": "import"
+  },
+  {
+    "id": 36,
+    "product_id": 10,
+    "sku": "SKU-1009",
+    "old_price_kopecks": 5750,
+    "new_price_kopecks": 6000,
+    "changed_at": "2026-02-02",
+    "changed_by": 7,
+    "source": "import"
+  },
+  {
+    "id": 37,
+    "product_id": 16,
+    "sku": "SKU-1015",
+    "old_price_kopecks": 13450,
+    "new_price_kopecks": 14000,
+    "changed_at": "2026-02-02",
+    "changed_by": 12,
+    "source": "import",
+    "note": "курс USD"
+  },
+  {
+    "id": 38,
+    "product_id": 20,
+    "sku": "SKU-1019",
+    "old_price_kopecks": 4050,
+    "new_price_kopecks": 4250,
+    "changed_at": "2026-02-02",
+    "changed_by": 12,
+    "source": "import"
+  }
+]
