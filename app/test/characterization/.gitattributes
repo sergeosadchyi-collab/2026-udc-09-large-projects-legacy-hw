@@ -1,0 +1,6 @@
+# Golden masters are compared byte-for-byte. The Облік-Плюс export is CRLF by
+# contract (app/docs/integrations/oblik-plus.md), so git must not normalise
+# line endings here — with core.autocrlf=input it otherwise rewrites them to LF
+# on commit and the characterization test fails on a fresh clone.
+golden/** -text
+
