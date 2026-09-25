@@ -38,8 +38,9 @@ test('rendered invoice shows number, customer, dates and totals', function () {
   var html = render.renderInvoiceHtml(invoice, customer);
   assert.match(html, /Рахунок-фактура № INV-2026-00007/);
   assert.match(html, /ЄДРПОУ 10000001/);
-  assert.match(html, /Дата: <b>03\/09\/2026<\/b>/);
-  assert.match(html, /Сплатити до: <b>03\/23\/2026<\/b>/);
+  // BILL-482: customers read DD.MM.YYYY, not MM/DD/YYYY
+  assert.match(html, /Дата: <b>09\.03\.2026<\/b>/);
+  assert.match(html, /Сплатити до: <b>23\.03\.2026<\/b>/);
   assert.match(html, /До сплати: 1 200,00 грн/);
 });
 

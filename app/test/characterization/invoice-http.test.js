@@ -7,6 +7,9 @@
  * it answers text/html.
  *
  * Read by: a HUMAN. Expected to change in Task C — but only in the dates.
+ *
+ * NB: the server is closed from t.after() and the request is promisified, so
+ * a failing assertion cannot leave the listener open and hang `node --test`.
  */
 'use strict';
 
@@ -17,46 +20,63 @@ var createServer = require('../../server').createServer;
 var store = require('../../lib/store');
 var render = require('../../lib/invoices/render');
 
-function get(server, path, headers, cb) {
-  var port = server.address().port;
-  http.get({ port: port, path: path, headers: headers || {} }, function (res) {
-    var chunks = [];
-    res.on('data', function (c) {
-      chunks.push(c);
+/** Start a server on an ephemeral port; always closed by t.after(). */
+function listen(t) {
+  var server = createServer();
+  t.after(function () {
+    return new Promise(function (resolve) {
+      server.close(resolve);
     });
-    res.on('end', function () {
-      cb(res, Buffer.concat(chunks).toString('utf8'));
+  });
+  return new Promise(function (resolve) {
+    server.listen(0, function () {
+      resolve(server);
     });
   });
 }
 
-test('characterization: GET /invoices/:number is public and returns the rendered HTML', function (t, done) {
-  var server = createServer().listen(0, function () {
-    get(server, '/invoices/INV-2026-00007', null, function (res, body) {
-      var invoice = store.loadSync('invoices').filter(function (i) {
-        return i.number === 'INV-2026-00007';
-      })[0];
-      var customer = store.loadSync('customers').filter(function (c) {
-        return c.id === invoice.customer_id;
-      })[0];
-
-      assert.equal(res.statusCode, 200);
-      assert.equal(res.headers['content-type'], 'text/html; charset=utf-8');
-      // no x-staff-id was sent and the page still rendered
-      assert.equal(body, render.renderInvoiceHtml(invoice, customer));
-      assert.match(body, /Сплатити до: <b>03\/21\/2026<\/b>/);
-
-      server.close(done);
+function get(server, path, headers) {
+  return new Promise(function (resolve, reject) {
+    var req = http.get({ port: server.address().port, path: path, headers: headers || {} }, function (res) {
+      var chunks = [];
+      res.on('data', function (c) {
+        chunks.push(c);
+      });
+      res.on('end', function () {
+        resolve({ status: res.statusCode, headers: res.headers, body: Buffer.concat(chunks).toString('utf8') });
+      });
+      res.on('error', reject);
     });
+    req.on('error', reject);
   });
+}
+
+function fixture(number) {
+  var invoice = store.loadSync('invoices').filter(function (i) {
+    return i.number === number;
+  })[0];
+  var customer = store.loadSync('customers').filter(function (c) {
+    return c.id === invoice.customer_id;
+  })[0];
+  return { invoice: invoice, customer: customer };
+}
+
+test('characterization: GET /invoices/:number is public and returns the rendered HTML', async function (t) {
+  var server = await listen(t);
+  var res = await get(server, '/invoices/INV-2026-00007');
+  var f = fixture('INV-2026-00007');
+
+  assert.equal(res.status, 200);
+  assert.equal(res.headers['content-type'], 'text/html; charset=utf-8');
+  // no x-staff-id was sent and the page still rendered
+  assert.equal(res.body, render.renderInvoiceHtml(f.invoice, f.customer));
+  // BILL-482: customer-facing dates are DD.MM.YYYY (data: 2026-03-07 / 2026-03-21)
+  assert.match(res.body, /Сплатити до: <b>21\.03\.2026<\/b>/);
 });
 
-test('characterization: /api/* still needs x-staff-id (unchanged by the ticket)', function (t, done) {
-  var server = createServer().listen(0, function () {
-    get(server, '/api/invoices', null, function (res) {
-      assert.equal(res.statusCode, 401);
-      server.close(done);
-    });
-  });
+test('characterization: /api/* still needs x-staff-id (unchanged by the ticket)', async function (t) {
+  var server = await listen(t);
+  var res = await get(server, '/api/invoices');
+  assert.equal(res.status, 401);
 });
 

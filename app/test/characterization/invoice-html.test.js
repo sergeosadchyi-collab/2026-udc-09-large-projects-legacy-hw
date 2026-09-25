@@ -30,12 +30,13 @@ test('characterization: invoice HTML (the whole document) — the invoice the cu
   assertGolden('invoice-INV-2026-00007.html', render.renderInvoiceHtml(f.invoice, f.customer));
 });
 
-test('characterization: invoice HTML currently prints dates as MM/DD/YYYY', function () {
+test('characterization: invoice HTML prints dates as DD.MM.YYYY (BILL-482)', function () {
   var f = fixture('INV-2026-00007');
   var html = render.renderInvoiceHtml(f.invoice, f.customer);
-  // data: issued_at 2026-03-07, due_at 2026-03-21
-  assert.match(html, /Дата: <b>03\/07\/2026<\/b>/);
-  assert.match(html, /Сплатити до: <b>03\/21\/2026<\/b>/);
+  // data: issued_at 2026-03-07, due_at 2026-03-21 — was 03/07/2026 before BILL-482
+  assert.match(html, /Дата: <b>07\.03\.2026<\/b>/);
+  assert.match(html, /Сплатити до: <b>21\.03\.2026<\/b>/);
+  assert.ok(html.indexOf('03/07/2026') === -1, 'no MM/DD/YYYY left in the customer-facing invoice');
 });
 
 test('characterization: invoice HTML for an invoice with no customer row', function () {

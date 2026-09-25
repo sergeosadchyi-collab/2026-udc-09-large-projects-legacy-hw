@@ -51,7 +51,7 @@ test('characterization: reminder outbox for 2026-04-01 (overdue)', function () {
   assertGolden('reminders-2026-04-01.txt', out);
 });
 
-test('characterization: reminder text currently prints the due date as MM/DD/YYYY', function () {
+test('characterization: reminder text prints the due date as DD.MM.YYYY (BILL-482)', function () {
   var inv = {
     id: 5,
     number: 'INV-2026-00005',
@@ -61,6 +61,7 @@ test('characterization: reminder text currently prints the due date as MM/DD/YYY
     customer_id: 1,
   };
   var mails = reminders.buildReminders([inv], { 1: { id: 1, email: 'c@example.invalid', contact_name: 'Ірина' } }, '2026-03-09');
-  assert.match(mails[0].text, /слід сплатити до 03\/12\/2026\./);
+  // the exact line the ticket quotes: was "слід сплатити до 03/12/2026."
+  assert.match(mails[0].text, /слід сплатити до 12\.03\.2026\./);
 });
 

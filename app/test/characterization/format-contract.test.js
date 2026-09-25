@@ -22,6 +22,29 @@ test('characterization: formatDate today returns MM/DD/YYYY', function () {
   assert.equal(format.formatDate('2026-01-01'), '01/01/2026');
 });
 
+test('BILL-482: formatDateUk returns DD.MM.YYYY for customer-facing output', function () {
+  assert.equal(format.formatDateUk('2026-03-09'), '09.03.2026');
+  assert.equal(format.formatDateUk('2026-12-31'), '31.12.2026');
+  assert.equal(format.formatDateUk('2026-01-01'), '01.01.2026');
+});
+
+test('BILL-482: formatDateUk keeps the same edge-case behaviour as formatDate', function () {
+  ['', null, undefined, 'not a date'].forEach(function (bad) {
+    assert.equal(format.formatDateUk(bad), '', 'input: ' + String(bad));
+    assert.equal(format.formatDate(bad), '', 'input: ' + String(bad));
+  });
+  assert.equal(format.formatDateUk(new Date(Date.UTC(2026, 2, 9))), '09.03.2026');
+  assert.equal(format.formatDateUk('2026-03-09T22:30:00Z'), '09.03.2026');
+});
+
+test('BILL-482: formatDate is still there for the machine consumer', function () {
+  // config/export-columns.json maps "type": "Date" onto format['formatDate'];
+  // renaming or repurposing it would silently break the Облік-Плюс import
+  assert.equal(typeof format.formatDate, 'function');
+  assert.equal(format.formatDate('2026-03-09'), '03/09/2026');
+  assert.notEqual(format.formatDate('2026-03-09'), format.formatDateUk('2026-03-09'));
+});
+
 test('characterization: formatDate edge cases (these must NOT change)', function () {
   assert.equal(format.formatDate(''), '');
   assert.equal(format.formatDate(null), '');

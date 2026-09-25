@@ -37,13 +37,13 @@ function body(kind, invoice, customer) {
   if (kind === 'overdue') {
     lines.push(
       'рахунок ' + invoice.number + ' на суму ' + format.formatMoney(invoice.total_kopecks) +
-        ' мав бути сплачений до ' + format.formatDate(invoice.due_at) + '.',
+        ' мав бути сплачений до ' + format.formatDateUk(invoice.due_at) + '.',
     );
     lines.push('Якщо ви вже сплатили — просто проігноруйте цей лист.');
   } else {
     lines.push(
       'нагадуємо, що рахунок ' + invoice.number + ' на суму ' + format.formatMoney(invoice.total_kopecks) +
-        ' слід сплатити до ' + format.formatDate(invoice.due_at) + '.',
+        ' слід сплатити до ' + format.formatDateUk(invoice.due_at) + '.',
     );
   }
   lines.push('');
